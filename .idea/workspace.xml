@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0143224e-0cd8-4d0c-9c7e-03fc43af3ea6" name="Default" comment="" />
+    <list default="true" id="0143224e-0cd8-4d0c-9c7e-03fc43af3ea6" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vue/sell/src/components/header/header.vue" afterPath="$PROJECT_DIR$/vue/sell/src/components/header/header.vue" />
+    </list>
     <ignored path="vue.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,8 +28,10 @@
         <entry file="file://$PROJECT_DIR$/vue/sell/src/App.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
-              <folding />
+              <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+              <folding>
+                <marker date="1496743972713" expanded="true" signature="2065:2069" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -34,8 +39,8 @@
       <file leaf-file-name="header.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vue/sell/src/components/header/header.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.11600928">
-              <caret line="4" column="61" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="61" />
+            <state vertical-scroll-proportion="-0.11600928">
+              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -393,7 +398,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
-          <folding />
+          <folding>
+            <marker date="1496743972713" expanded="true" signature="2065:2069" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -424,8 +431,10 @@
     <entry file="file://$PROJECT_DIR$/vue/sell/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
-          <folding />
+          <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+          <folding>
+            <marker date="1496743972713" expanded="true" signature="2065:2069" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -455,8 +464,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vue/sell/src/components/header/header.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11600928">
-          <caret line="4" column="61" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="61" />
+        <state vertical-scroll-proportion="-0.11600928">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding />
         </state>
       </provider>
