@@ -1,5 +1,6 @@
 <template>
 <div class="header">
+<<<<<<< HEAD
  <div class="content-wrapper">
    <div class="avatar">
      <img width="64" height="64" :src="seller.avatar" alt="">
@@ -33,6 +34,13 @@ export default{
     this.classMap = ['decrease', 'discount', 'special', 'invoice', 'guarantee'];
   }
 };
+=======
+  我是header
+</div>
+</template>
+<script type="text/ecmascript-6">
+export default{};
+>>>>>>> 3d2370d0a99e0982e70d8a588f14aeb57703c446
 </script>
 <style rel="stylesheet/style" type="text/css">
 .header{
