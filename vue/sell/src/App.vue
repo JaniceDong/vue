@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-<<<<<<< HEAD
     <site-header :seller="seller"></site-header>
     <ul class="tab border-1px border-2px">
       <li>
@@ -39,37 +38,11 @@
           this.seller = response.data;
         }
       });
-=======
-    <site-header></site-header>
-    <div class="tab">
-      <div class="tab-item">
-        <a v-link="{path:'/goods'}">商品</a>
-        </div>
-      <div class="tab-item">
-        <a v-link="{path:'/ratings'}">评论</a>
-      </div>
-      <div class="tab-item">
-        <a v-link="{path:'/seller'}">商家</a>
-      </div>
-    </div>
-    <router-view></router-view>
-
-  </div>
-</template>
-
-<script>
-  import SiteHeader from './components/header/header.vue';
-
-  export default {
-    components: {
-      SiteHeader
->>>>>>> 3d2370d0a99e0982e70d8a588f14aeb57703c446
     }
   };
 </script>
 
 <style rel="stylesheet/style" type="text/css">
-<<<<<<< HEAD
   ul {
     display: flex;
     height: 4rem;
@@ -82,7 +55,7 @@
     text-align: center;
     list-style: none;
     height:100%;
-    line-height:4rem;;
+    line-height: 40px;
   }
 
   a {
@@ -93,7 +66,7 @@
   }
   a.active{
     color:rgb(240,20,20);
-=======
+  }
   #app .tab{
     display:flex;
     width:100%;
@@ -103,7 +76,6 @@
   .tab-item{
     flex:1;
     text-align:center;;
->>>>>>> 3d2370d0a99e0982e70d8a588f14aeb57703c446
   }
 
 </style>
