@@ -17,8 +17,15 @@
        <span class="text">{{ seller.supports[0].description }}</span>
      </div>
    </div>
+   <div v-if="seller.supports" class="support-count">
+    <span class="count">{{ seller.supports.length }}个</span>
+    <i class="icon-keyboard_arrow_right"></i>
+  </div>
  </div>
-  <div class="bulletin-wrapper"></div>
+  <div class="bulletin-wrapper">
+    <span class="bulletin-title"></span><span class="bulletin-text">{{ seller.bulletin }}</span>
+    <i class="icon-keyboard_arrow_right"></i>
+  </div>
 </div>
 </template>
 <script type="text/ecmascript-6">
@@ -34,13 +41,15 @@ export default{
 };
 </script>
 <style rel="stylesheet/style" type="text/css">
+  @import url(../../common/styles/icon.css);
 .header{
   color:white;
-  background: #000;
+  background: #999;
 }
   .header .content-wrapper{
     padding:24px 12px 18px 24px;
     font-size:0;
+    position:relative;
   }
   .header .avatar{
     display: inline-block;
@@ -53,6 +62,29 @@ export default{
     display: inline-block;
     margin-left:16px;
   }
+.support-count{
+  position:absolute ;
+  right: 12px;
+  bottom: 14px;
+  padding:0 8px;
+  height: 24px;
+  line-height: 24px;
+  -webkit-border-radius:14px;
+  -moz-border-radius:14px;
+  border-radius:14px;
+  background:rgba(0,0,0,0.2);
+  text-align: center;
+  font-size:10px;
+}
+.support-count .count{
+  font-size:10px;
+  vertical-align: top;
+}
+.icon-keyboard_arrow_right{
+  font-size: 10px;
+  line-height:24px;
+  margin-left:2px;
+}
   .content .title{
     margin:2px 0 8px 0;
   }
@@ -71,7 +103,7 @@ export default{
    vertical-align: top;
     width: 12px;
     height: 12px;
-    margin-right: 14px;
+    margin-right: 7px;
     -webkit-background-size:12px 12px;
     background-size:12px 12px;
     background-repeat:no-repeat;
@@ -123,5 +155,42 @@ export default{
     margin-left: 6px;
     font-size:16px;
     font-weight:bold;
+  }
+.bulletin-wrapper{
+  height:28px;
+  line-height: 28px;
+  padding:0 22px 0 12px;
+  white-space:nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  background:rgba(7,17,27,0.2);
+}
+  .bulletin-wrapper .bulletin-title{
+    display: inline-block;
+    width:22px;
+    height: 12px;
+    margin-top:7px;
+    vertical-align: top;
+    background-size: 22px 12px;
+    background-image: url(bulletin@2x.png);
+    background-repeat:no-repeat;
+  }
+  @media (min-device-pixel-ratio:3),(-webkit-device-pixel-ratio: 3) {
+    .bulletin-wrapper .bulletin-title{
+      background-image: url(bulletin@3x.png);
+    }
+  }
+  .bulletin-wrapper .bulletin-text{
+    font-size: 10px;
+    font-weight:200;
+    margin:0 4px;
+    vertical-align: top;
+  }
+  .bulletin-wrapper .icon-keyboard_arrow_right{
+    position: absolute;
+    font-size: 10px;
+    right: 12px;
+    top: 2px;
   }
 </style>
