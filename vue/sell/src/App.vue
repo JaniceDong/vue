@@ -44,14 +44,14 @@
 </script>
 
 <style rel="stylesheet/style" type="text/css">
-  ul {
+.tab {
     display: flex;
     height: 4rem;
     justify-content: space-around;
     align-items: center;
   }
 
-  li {
+ .tab li {
     flex: 1;
     text-align: center;
     list-style: none;
