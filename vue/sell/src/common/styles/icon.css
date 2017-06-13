@@ -1,18 +1,19 @@
-@font-face {
-  font-family: 'icon';
-  src: url('../fonts/icon.eot?ggz1rh');
-  src: url('../fonts/icon.eot?ggz1rh#iefix') format('embedded-opentype'),
-    url('../fonts/icon.ttf?ggz1rh') format('truetype'),
-    url('../fonts/icon.woff?ggz1rh') format('woff'),
-    url('../fonts/icon.svg?ggz1rh#icon') format('svg');
+@font-face{
+  font-family: 'sell-icon';
+  src: url('../fonts/sell-icon.eot?k5xf13');
+  src: url('../fonts/sell-icon.eot?k5xf13#iefix') format('embedded-opentype'),
+  url('../fonts/sell-icon.ttf?k5xf13') format('truetype'),
+  url('../fonts/sell-icon.woff?k5xf13') format('woff'),
+  url('../fonts/sell-icon.svg?k5xf13#sell-icon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
+
 [class^="icon-"], [class*=" icon-"]{
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icon' !important;
-/*  speak: none;*/
+  font-family: 'sell-icon' !important;
+  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -24,18 +25,19 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-add_circle:before{
+.icon-arrow_lift:before{
   content: "\e900";
 }
 
-.icon-arrow_lift:before{
+.icon-thumb_up:before{
   content: "\e901";
 }
 
-.icon-check_circle:before{
+.icon-thumb_down:before{
   content: "\e902";
 }
-.icon-close:before{
+
+.icon-shopping_cart:before{
   content: "\e903";
 }
 
@@ -43,23 +45,25 @@
   content: "\e904";
 }
 
-.icon-keyboard_arrow_right:before{
+.icon-check_circle:before{
   content: "\e905";
 }
 
-.icon-remove_circle_outline:before{
+.icon-close:before{
   content: "\e906";
 }
 
-.icon-shopping_cart:before{
+.icon-remove_circle_outline:before{
   content: "\e907";
 }
 
-.icon-thumb_down:before{
+.icon-add_circle:before{
   content: "\e908";
 }
 
-.icon-thumb_up:before{
+.icon-keyboard_arrow_right:before{
   content: "\e909";
 }
+
+
 
