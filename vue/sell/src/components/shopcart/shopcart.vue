@@ -17,6 +17,12 @@
        </div>
      </div>
    </div>
+    <transition name="drop">
+      <div class="ball-container">
+        <div v-for="ball in balls" v-show="ball.show" class="ball"></div>
+        <div class="inner"></div>
+      </div>
+    </transition>
   </div>
 </template>
 <script type="text/ecmascript-6">
@@ -39,6 +45,27 @@
         type: Number,
         default: 0
       }
+    },
+    data () {
+      return {
+        balls: [
+          {
+          show: false
+        },
+          {
+            show: false
+          },
+          {
+            show: false
+          },
+          {
+            show: false
+          },
+          {
+            show: false
+          }
+        ]
+      };
     },
     computed: {
       totalPrice() {
@@ -191,5 +218,35 @@
   .content-right .pay.enough{
     background: #00b43c;
     color:white;
+  }
+.ball-container{
+  -webkit-transition: all 0.4s ;
+  -moz-transition: all 0.4s ;
+  -ms-transition: all 0.4s ;
+  -o-transition: all 0.4s ;
+  transition: all 0.4s ;
+}
+
+.ball-container .ball{
+  position: fixed;
+  left: 32px;
+  bottom: 22px;
+  z-index: 200;
+}
+  .ball.drop-enter,.ball.drop-leave-active{
+
+  }
+  .ball .inner{
+    width: 16px;
+    height: 16px;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    background:rgb(0,160,220);
+    -webkit-transition: all 0.4s ;
+    -moz-transition: all 0.4s ;
+    -ms-transition: all 0.4s ;
+    -o-transition: all 0.4s ;
+    transition: all 0.4s ;
   }
 </style>
